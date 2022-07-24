@@ -16,11 +16,13 @@ app.get("/" , function (req,res) {
          const temperature = weatherData.main.temp;
          const weatherDescription = weatherData.weather[0].description;
          console.log(weatherDescription);
+         res.write("<p>The Temperature in London is " + temperature + " degrees Celcuis.</p>");
+         res.write("<h1>The weather is currently " + weatherDescription + " .</h1>");
+         res.send();
       });
 
    });
 
-   res.send("server is running");
 });
 
 
