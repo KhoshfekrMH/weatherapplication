@@ -9,8 +9,11 @@
 <form action="/" method="post">
     <label for="cityInput">City Name : </label>
     <input type="text" id="cityInput" name="cityInput">
-    <label for="UnitTemp">Unit of Temperature : </label>
-    <input type="text" id="UnitTemp" name="UnitTemp">
+    <select name="tempUnit" id="tempUnit">
+        <option value="standard">standard</option>
+        <option value="metric">metric</option>
+        <option value="imperial">imperial</option>
+    </select>
     <button type="submit" name="btn1">Let's Go</button>
 </form>
 
